@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#minu muljed ja saavutused skriptimises
+#
+echo -n "Jana Sutt"
+echo -n " Õpin ISP218 õppegrupis
+echo -n "Meeldib antud aine"
+#
+#skripti lõpp
+
