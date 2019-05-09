@@ -1,0 +1,11 @@
+#bin/bash
+#
+#Skripti alustamine
+
+#kuupäeva skript, mis näitab kasutajale kuupäeva ja ajaga seotud infot
+#
+echo "Current time" `date +"%A, %B -%d, %Y`#
+echo "Time"`date +"%H:%M"`#
+cal #
+#Skripti lõpp
+
