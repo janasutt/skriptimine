@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+#See skript otsib .log lõpuga faile
+#
+find /var/ -name *.log 2>/dev/null -exec wc -1 {} \; |
+#
+#Skripti lõpp
+
