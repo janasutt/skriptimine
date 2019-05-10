@@ -1,0 +1,9 @@
+#!bin/bash
+#Skript, mis väljastab mitu päeva antud hetkel masin on töödanud.
+
+echo "Arvuti" `hostname` "on töödanud" `uptime -p | cut -f1 -d "," | cut -f2 - d " "`"tundi"
+
+#
+#Skripti lõpp
+
+
