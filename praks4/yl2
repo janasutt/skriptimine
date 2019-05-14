@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+#Küpsisetordi skript
+echo -n "Sisesta kandiku pikkus cm-tes: " 
+read pikkus #kysib sisendit
+echo -n "sisesta kandiku laius cm-tes: "
+read laius
+echo -n "kui suur on küpsis cm-tes: "
+read kypsis
+echo -n " mitu kihti on tordil:"
+read kihid
+echo -n "mitu küpsist on pakis "
+read kypsisepak
+echo -n "sul on vaja"
+#Arvutamine
+"kypsise pindala
+pindala= `expr $pikkus \*$ $laius`
+#Kypsisekihtide kätte saamine, kui pindala ja kogus on teada
+kypsisekiht=` expr $pindala / $kypsis` 
+#Kypsisekoogi arvutamine, kui on teada mitu kihti on vaja
+kypsisekook=` expr $kypsisekiht /* $kihid ` 
+#Pakkide arvutamine
+pakid=`expr $kypsiskook /$kypsispakk`
+#Palju jääb alles
+Jaak= ` expr $kypsiskook % $kypsispakk`
+echo "Kokku on vaja mitu pakki küpsiseid ja lisaks $jaak tykki!"
+
+
+
