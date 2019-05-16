@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+#Skript, mis on abiks bussiekskursiooni korraldajale
+echo -n "Sisestage reisijate arv: "
+read #inimeste arv
+echo -n "Sisestage bussi istekohtade arv: "
+read #palju kohti veel saadaval
+buss1=`expr $inimesed / $kohad` #arvutab
+buss2=`expr $inimesed % $kohad`
+echo "$buss1 täielikult täidetud kohad ja $maha jaab inimeste arv"
+#
+#lõpp
