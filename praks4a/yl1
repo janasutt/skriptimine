@@ -1,0 +1,13 @@
+#!/bin/sh
+#Skript, mis küsib kasutajalt tema nime,sünniaega, vanust ja tervitab kasutajat
+echo -n "Mis on Teie nimi?:"
+read nimi
+echo "Tervist, sisesta oma nimi: "
+read nime sisestamine
+echo -n "sisesta oma sünniaasta: " 
+read sünniaasta sisestamine
+aasta=$(date +'%Y') #käesoleva aasta sisestamine
+vanus"$(expr $ ((aasta-synniaasta))) #kasutaja vanuse arvutamine
+echo "Te olete $vanus aastat vana" 
+#
+#Skripti lõpp
