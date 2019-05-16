@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+#echo -n "Sisesta ringi raadius cm:"
+read cm
+S=` echo "3.14 * ($cm * $cm)" | bc
+U=` echo "2* 3.14 * $cm" | bc
+echo "Sinu ringi pindala on $S cm2 ja ümbermõõt on $U cm"
+#
+#Skripti lõpp
