@@ -1,0 +1,15 @@
+#!/bin/bash
+#Skript backupi tegemiseks 
+#echo -n "Palun sisestage kataloog, mida soovite back uppida"
+read nimi
+echo "Palun oodake..."
+basename ="$(basename= $katalooginimi)"
+#backupi asukoht
+backup_kaust=/home/user/skriptimine/praks4a/backup/
+"Alustame backuppimisega
+d=$(date --iso) #kuupäev
+tar -zcvf $backup $backup_kaust
+echo "Tehtud"
+#Skripti lõpp
+
+
