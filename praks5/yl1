@@ -1,0 +1,18 @@
+#!/bin/sh
+#Skript mis arvutab kolmnurga hüpotenuusi väärtuse, koos seletava kirjeldusega
+#
+#Skripti algus
+echo 
+echo -n "Sisesta a külje väärtus:"
+read a
+echo "Sisesta b külje väärtus:"
+"
+#Arvutamine
+#
+a_ruut=$ ( ($a ** 2) ) # a ruudus
+b_ruut=$ ( ($b ** 2) ) # b ruudus
+c_ruut=$ ( ($a_ruut + b _ruut) )
+c=` echo "scale=2 ; sqrt ($c_ruut)" |bc
+echo "c= $c"
+#Skripti lõpp
+
