@@ -1,0 +1,15 @@
+#/bin/bash
+#Paevade arvutamise skript
+#
+echo "Paevade nimede asemel on numbrid O kuni 6"
+echo #Pühapaev on 0, esmaspaev on -1 ja teisipaev on -2, kolmapaev -3, neljapaev -4, reede -5 ja laupaev -6" 
+echo -n "Sisesta millal ära sõidad:"
+read lahkumine
+echo -n "Sisesta paevade arv: "
+read oopaevad
+lisapaevad=$ (($oopaevad%7))
+tagasi=$ (($oidab + $lisapaevad))
+echo -n "Olete tagasi paeval number $tagasi"
+#Skripti lopp
+
+
