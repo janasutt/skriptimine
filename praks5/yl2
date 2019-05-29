@@ -1,0 +1,15 @@
+#!/bin/bash
+#Kolmnurga külgede arvutamise skript
+
+echo -n "Sisesta A külje väärtus: "
+read A
+echo -n "Sisesta B külje väärtus: "
+read B
+echo -n "Sisesta C külje väärtus: "
+read C
+
+Ümbermõõt=$(echo "scale="; ($a+$b+$c)/2 | bc) 
+Pindala=$(echo "scale=2;sqrt($ümbermõõt-$a)*($ümbermõõt-$-c)" |bc)
+echo "Kolmnurga pindala: $pindala"
+
+#Skirpti lõpp
