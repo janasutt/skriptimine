@@ -1,0 +1,16 @@
+#!/bin/bash
+#Bussi kohtade arvutamise skript
+echo -n "Sisestage palun reisijate arv: "
+read #inimeste arv
+echo -n "Sisestage palun istekohtade arv: "
+read #vabade kohtade arv
+#arvutamine
+bussiarv=`expr $reisijad / $kohad`
+#Mitu bussi täidetakse?
+puudu= `expr $inimesed % $istekohad`
+#Mitu kohta jääb puudu?
+if [puudu -eq 0 ]
+then echo "Kokku on vaja %bussiarv bussi"
+else echo "Kokku on vaja `expr $busside_arv+ 1 `bussi"
+fi
+Skripti lõpp
