@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+#Vanuse skript
+#
+echo -n "Sisesta oma vanus: "
+read vanus
+if test $vanus -gt 0 -a  $vanus -1t 11
+then
+echo "oled laps"
+elif test $vanus -ge 18 -a $vanus -lt 63
+then
+echo "oled täiskasvanu"
+elif test $vanus -ge 63
+then
+echo "oled seenior"
+else
+echo "vigane sisend"
+read vanus
+fi
+#
+#
+#
