@@ -1,0 +1,29 @@
+#!/bin/bash
+#Skripti algus
+echo "Sisesta ridade arv:"
+read r
+echo "Sisesta tarnide arv reas:"
+read t
+for (( i=1; i<=$r; i++))
+do
+echo -n "$i"
+if ["$i" == 1] || ["$i" ==$r]
+then
+for (( j=1; j<=$t; j++))
+do
+echo "*"
+done
+else 
+echo "*"
+for (( a = 2; a < $t;a++))
+do
+echo " "
+done
+echo "*"
+fi
+echo ""
+done
+#
+#
+#
+
