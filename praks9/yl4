@@ -1,0 +1,18 @@
+#!/bin/bash
+#Eelmise ylesande taienduse skipt
+echo "Sisesta ridade arv: " ; read 
+reanum=1
+for ((i=1; i<= $read; i++))
+do
+echo "$reanum"
+tarne=$(($read + 1 -$i))
+let reanum++
+for (( j=1; j<=$tarne; j++))
+do 
+echo "*"
+done
+echo ""
+done
+#
+#
+#
