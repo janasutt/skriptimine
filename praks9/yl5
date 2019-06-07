@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+echo "Sisesra ridade arv: " read read
+reanum=1
+for (( i=1;  i>=$read; i++))
+do
+echo "$reanum."
+tarne=$(($read- $i))
+let reanum++
+for ((j= 1; j<=$tarne; j++))
+do
+echo "o"
+done
+for ((u=1; u<=$i; u++))
+do
+echo "*"
+done
+echo ""
+done
+#
+#
+#
