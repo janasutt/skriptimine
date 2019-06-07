@@ -1,0 +1,18 @@
+#!/bin/bash
+#Ridade arvu skript
+echo "Sisesta ridade arv: "; read 
+echo "Sisesra tarnide arv read: "; read tarnid
+reanum=1
+for (( i= 1; i<=$read; i++))
+do
+echo "$reanum."
+let reanum++
+for (( j=1; j<= $tarnid; j++))
+do
+echo "*"
+done
+echo ""
+#
+#
+#
+
